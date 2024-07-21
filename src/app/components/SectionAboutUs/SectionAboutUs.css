@@ -1,0 +1,262 @@
+.section-about-us{
+    margin-top: 220px;
+}
+.section-title h2{
+    text-align: center;
+    font-size: 48px;
+    color: #3F485E;
+}
+.section-title p{
+    text-align: center;
+    color: #77838F;
+    font-size: 19px;
+    max-width: 495px;
+    margin: 32px auto 0;
+    line-height: 30px;
+}
+.our-website{
+    display: flex;
+    align-items: start;
+    justify-self: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 115px;
+}
+.our-website-image{
+    width: 35%;
+}
+.our-website-body{
+    width: 65%;
+}
+.our-website-body h3{
+    font-size: 50px;
+    color: #EB6B2A;
+    margin-bottom: 50px;
+}
+.our-website-body p{
+    font-size: 31px;
+    color: #3F485E;
+}
+.our-website-body ul li p{
+    font-size: 14px;
+    color: #3F485E;
+    letter-spacing: 0.3px;
+    max-width: 345px;
+}
+.our-website-body ul{
+    margin-top: 90px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.our-website-body ul li{
+    list-style: none;
+    width: 45%;
+}
+.our-website-body ul li h4{
+    font-size: 20px;
+    color: #3F485E;
+    position: relative;
+    margin-bottom: 30px;
+}
+.our-website-body ul li:first-child h4::before{
+    content: '';
+    background: url(../../../../public/images/icons/Fostering-bf.png) no-repeat;
+    position: absolute;
+    left: -48px;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+}
+.our-website-body ul li:nth-child(2) h4::before{
+    content: '';
+    background: url(../../../../public/images/icons/Promoting-bf.png) no-repeat;
+    position: absolute;
+    left: -48px;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+}
+.our-website-body ul li:nth-child(3) h4::before{
+    content: '';
+    background: url(../../../../public/images/icons/Mission-bf.png) no-repeat;
+    position: absolute;
+    left: -48px;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+}
+.our-website-body ul li:nth-child(4) h4::before{
+    content: '';
+    background: url(../../../../public/images/icons/Vision-bf.png) no-repeat;
+    position: absolute;
+    left: -48px;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+}
+
+
+/* Responsive */
+
+@media all and (min-width: 1600px){
+    .our-website-image img{
+        width: 100%;
+    }
+}
+@media all and (min-width: 1800px){
+    .our-website-image img{
+        height: auto;
+    }
+    .our-website-body ul li h4{
+        font-size: 22px;
+    }
+    .our-website-body ul li p{
+        font-size: 16px;
+    }
+    .our-website-body ul{
+        row-gap: 80px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .our-website-body ul li h4 {
+        font-size: 24px;
+    }
+    .our-website-body ul li p {
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 2200px){
+    .our-website-body ul li h4 {
+        font-size: 26px;
+    }
+    .our-website-body ul li p {
+        font-size: 20px;
+        max-width: 85%;
+    }
+    .our-website-body p{
+        font-size: 34px;
+    }
+    .our-website-body h3{
+        font-size: 54px;
+    }
+    .section-title p{
+        font-size: 21px;
+    }
+    .section-title h2{
+        font-size: 50px;
+    }
+}
+
+/* Responsive */
+
+@media all and (min-width: 2600px){
+    .our-website-body ul{
+        margin-top: 110px;
+        row-gap: 115px;
+    }
+    .our-website-body ul li h4 {
+        font-size: 28px;
+    }
+    .our-website-body ul li p{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width: 1399.98px){
+    .our-website-body ul{
+        width: 95%;
+    }
+}
+@media all and (max-width: 1199.98px){
+    .our-website{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .our-website-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .our-website-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .our-website-image img{
+        width: 85%;
+        height: auto;
+    }
+}
+@media all and (max-width: 767.98px){
+    .our-website-body p{
+        font-size: 26px;
+        text-align: center;
+    }
+    .our-website-body ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .our-website-body ul li p{
+        text-align: start;
+    }
+    .our-website-body ul li{
+        width: 95%;
+    }
+    .section-title h2{
+        font-size: 40px;
+    }
+    .our-website-body h3{
+        font-size: 45px;
+    }
+    .our-website-body p{
+        font-size: 28px;
+    }
+    .section-title p{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .section-about-us{
+        margin-top: 100px;
+    }
+}
+@media all and (max-width: 575.98px){
+    .our-website-body h3{
+        font-size: 40px;
+    }
+    .our-website-body p{
+        font-size: 24px;
+    }
+    .section-title h2{
+        font-size: 30px;
+    }
+    .our-website-body h3{
+        font-size: 35px;
+    }
+    .our-website-body p{
+        font-size: 24px;
+    }
+    .our-website-body ul{
+        padding-left: 20px;
+    }
+    .our-website{
+        margin-top: 70px;
+    }
+    .section-title p{
+        font-size: 14px;
+    }
+}

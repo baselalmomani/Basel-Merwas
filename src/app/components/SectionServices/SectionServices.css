@@ -1,0 +1,186 @@
+.section-services{
+    margin-top: 240px;
+}
+.services-title {
+    margin-bottom: 60px;
+}
+.services-title h2{
+    text-align: center;
+    font-size: 48px;
+    color: #3F485E;
+}
+.services-title p{
+    text-align: center;
+    color: #77838F;
+    font-size: 19px;
+    max-width: 495px;
+    margin: 32px auto 0;
+    line-height: 30px;
+}
+.services-body .body-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3F485E;
+    padding: 80px 155px 80px 53px;
+    border-bottom-left-radius: 75px;
+    gap: 80px;
+}
+.services-body{
+    position: relative;
+    right: -85px;
+}
+.services-body .body-block .text h4{
+    font-size: 40px;
+    line-height: 72px;
+    color: #EB6B2A;
+}
+.services-body .body-block .text p{
+    color: #FFF;
+    font-size: 16px;
+    line-height: 40px;
+}
+.block, .block-reverse{
+    margin-bottom: 23px;
+}
+.block-reverse .body-block{
+    background: transparent;
+}
+.block-reverse .body-block .text h4{
+    color: #3F485E;
+}
+.block-reverse .body-block .text p{
+    color: #163C67;
+}
+.block-reverse .services-body .body-block{
+    flex-direction: row-reverse; 
+}
+.block.second .services-body,
+.block-reverse.second .services-body{
+    right: unset;
+    left: -85px;
+}
+.block.second .services-body .body-block,
+.block-reverse.second .services-body .body-block{
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: 75px;
+    padding: 80px 53px 80px 155px;
+}
+
+
+/* Responsive */
+@media all and (min-width: 1600px){
+    .services-body .body-block .text h4{
+        font-size: 42px;
+    }
+    .services-body .body-block .text p{
+        font-size: 18px;
+    }
+}
+@media all and (min-width: 1800px){
+    .services-body .body-block .text h4{
+        margin-bottom: 10px;
+    }
+    .services-body .body-block .text p{
+        font-size: 20px;
+    }
+}
+@media all and (min-width: 2200px){
+    .services-title h2{
+        font-size: 50px;
+    }
+    .services-title p{
+        font-size: 21px;
+    }
+    .services-body .body-block .image img{
+        width: 600px;
+        height: 520px;
+    }
+    .services-body .body-block .text h4 {
+        font-size: 44px;
+    }
+    .services-body .body-block .text p {
+        font-size: 22px;
+        width: 88%;
+    }
+}
+
+/* Responsive */
+
+@media all and (min-width: 2600px){
+    .services-body .body-block .text p{
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 1199.98px){
+    .services-body .body-block{
+        gap: 60px;
+    }
+    .services-body .body-block .image img{
+        width: 380px;
+        height: 345px;
+    }
+}
+@media all and (max-width: 991.98px){
+    .services-body .body-block,
+    .block-reverse .services-body .body-block{
+        padding: 60px 120px 60px 25px;
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 767.98px){
+    .services-body .body-block .text h4{
+        font-size: 34px;
+    }
+    .services-title h2{
+        font-size: 40px;
+    }
+    .services-title p{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}
+@media all and (max-width: 575.98px){
+    .services-body{
+        right: -35px;
+    }
+    .block.second .services-body, .block-reverse.second .services-body{
+        left: -35px;
+    }
+    .services-body .body-block{
+        padding: 60px 65px 60px 25px;
+    }
+    .block.second .services-body .body-block, .block-reverse.second .services-body .body-block{
+        padding: 60px 25px 60px 65px;
+    }
+    .services-title h2{
+        font-size: 30px;
+    }
+    .services-title p{
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .services-body .body-block .image img {
+        width: 285px;
+        height: 265px;
+    }
+    .services-body .body-block .text h4 {
+        font-size: 21px;
+        line-height: 60px;
+    }
+    .services-body .body-block .text p{
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+@media all and (max-width: 399.98px){
+    .services-body .body-block .text h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .services-body .body-block .image img {
+        width: 255px;
+        height: 235px;
+    }
+}

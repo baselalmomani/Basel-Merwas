@@ -1,0 +1,113 @@
+.section-partners{
+    margin-top: 40px;
+    background: #3F485E;
+    padding: 77px 0 175px 0;
+}
+.partners-title h2{
+    text-align: center;
+    font-size: 48px;
+    color: #EB6B2A;
+}
+.partners-title p{
+    text-align: center;
+    color: #77838F;
+    font-size: 19px;
+    max-width: 495px;
+    margin: 32px auto 0;
+    line-height: 30px;
+}
+.cards{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+    flex-wrap: wrap;
+}
+.cards .card{
+    width: 400px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #FFF;
+    border-radius: 25px;
+    gap: 35px;
+    padding-top: 15px;
+    position: relative;
+}
+.cards .card::after{
+    content: '';
+    background: #EB6B2A;
+    width: 315px;
+    height: 11px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    opacity: 0.5;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.cards .card p{
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media all and (min-width: 2200px){
+    .partners-title h2{
+        font-size: 50px;
+    }
+    .partners-title p{
+        font-size: 21px;
+    }
+    .cards .card {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media all and (max-width: 767.98px){
+    .partners-title h2{
+        font-size: 40px;
+    }
+    .cards .card p{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .partners-title p{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}
+@media all and (max-width: 575.89px){
+    .cards .card {
+        width: 315px;
+        height: 310px;
+    }
+    .cards .card::after{
+        width: 240px;
+    }
+    .partners-title h2 {
+        font-size: 30px;
+    }
+    .partners-title p{
+        font-size: 14px;
+    }
+    .cards .card p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 399.89px) {
+    .cards .card {
+        width: 275px;
+        height: 275px;
+    }
+}

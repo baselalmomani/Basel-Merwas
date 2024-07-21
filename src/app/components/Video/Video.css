@@ -1,0 +1,114 @@
+.video-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    background: #3F485E;
+    width: 88%;
+    margin: 130px auto 0;
+    padding: 83px 110px;
+    border-radius: 25px;
+}
+.video-section .video video{
+    width: 555px;
+    height: 450px;
+    border-radius: 20px;
+}
+.video-body p{
+    font-size: 30px;
+    color: #FFF;
+    line-height: 46px;
+}
+.video-body p span{
+    color: #EE8E00;
+}
+
+/* Responsive */
+
+@media all and (min-width: 2200px){
+    .video-body p{
+        text-align: center;
+        line-height: 65px;
+    }
+    .video-section .video video {
+        width: 675px;
+        height: 500px;
+    }
+}
+
+@media all and (max-width: 1399.98px){
+    .video-section .video video {
+        width: 395px;
+        height: 385px;
+        border-radius: 20px;
+    }
+    .video-section{
+        padding: 70px 75px;
+    }
+}
+@media all and (max-width: 1199.98px){
+    .video-section{
+        flex-direction: column;
+    }
+    .video-section .video video {
+        width: 555px;
+        height: 450px;
+    }
+    .video-body p{
+        text-align: center;
+        font-size: 26px;
+    }
+}
+@media all and (max-width: 991.98px) {
+    .video-body p {
+        font-size: 24px;
+    }
+}
+@media all and (max-width: 767.98px) {
+    .video-body p {
+        font-size: 20px;
+    }
+    .video-section .video video {
+        width: 395px;
+        height: 350px;
+    }
+    .video-section{
+        gap: 55px;
+        width: 85%;
+        padding: 45px 50px;
+    }
+    
+}
+@media all and (max-width: 575.98px) {
+    .video-body p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .video-section .video video {
+        width: 310px;
+        height: 305px;
+    }
+    .video-section{
+        gap: 45px;
+        width: 85%;
+        padding: 40px 45px;
+        margin-top: 100px;
+    }
+    
+}
+@media all and (max-width: 399.98px) {
+    .video-body p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .video-section .video video {
+        width: 275px;
+        height: 250px;
+    }
+    .video-section{
+        gap: 35px;
+        width: 95%;
+        padding: 30px 35px;
+    }
+    
+}
